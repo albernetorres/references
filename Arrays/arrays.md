@@ -22,8 +22,14 @@ El comando anterior solo le indica al compilador que utilizaremos una variable d
 
 `nombre_variable = new tipo_dato [num_elementos];`
 
-* num_elementos: Numero de elementos que deseo almacenar en el array.
+* num_elementos: Numero de elementos que deseo almacenar en el array. 
+
+Nota: Es importante tener en cuenta que los array en JAVA son estructuras estaticas, lo que significa que una vez definido su tamaño, no se pueden redimensionar. Al definir un array se debe tener en cuanta su tamaño, de tal forma que pueda almacenar la informacion que deseamos, sin caer en el error de crearlo de un tamaño demasiado grande, porque en dado caso, estariamos ocupando memoria de forma innecesaria y desmejorando el rendimiento del equipo.
 
 Ejemplos:
 
-`nombre`
+`nombre = new String[20]; // Puede almacenar hasta 20 nombres
+numeros= new int[100]; //puede almacenar hasta 100 numeros enteros
+usuarios= new Persona[50] // puede almacenar hasta 50 objetos de tipo persona
+`
+
